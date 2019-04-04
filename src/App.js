@@ -1,26 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './App.css';
 
+import { SampleWebsite, Dashboard, About, Contact} from './components/template/SampleWebsite'
+import SampleHOC from './components/template/SampleHOC'
+import SampleDataTable from './components/template/SampleDataTable'
+import SampleValidation from './components/template/SampleValidation'
+import SampleFormRefux from './components/template/SampleFormRedux'
+
 class App extends Component {
+
+  // render() untuk merender DOM. Fungsi inti dari React.
+  // fungsi utama dari React. Dipanggil setelah mengeksekusi componentWillMount()
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      // contoh membuat route uri di react
+      <Router>
+          <Route path = "/" component = {SampleWebsite} />
+          <Route path = "/dashboard" component = {Dashboard} />
+          <Route path = "/about" component = {About} />
+          <Route path = "/contact" component = {Contact} />
+          <Route path = "/samplehoc" component = {SampleHOC} />
+          <Route path = "/datatable" component = {SampleDataTable} />
+          <Route path = "/validation" component = {SampleValidation} />
+          <Route path = "/reduxform" component = {SampleFormRefux} />
+      </Router>
     );
   }
 }
