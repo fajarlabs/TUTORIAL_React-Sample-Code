@@ -7,6 +7,7 @@ import SampleHOC from './components/template/SampleHOC'
 import SampleDataTable from './components/template/SampleDataTable'
 import SampleValidation from './components/template/SampleValidation'
 import SampleFormRefux from './components/template/SampleFormRedux'
+import SampleSubmitValidationFormRedux from './components/template/SampleSubmitValidationFormRedux'
 
 class App extends Component {
 
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path = "/datatable" component = {SampleDataTable} />
           <Route path = "/validation" component = {SampleValidation} />
           <Route path = "/reduxform" component = {SampleFormRefux} />
+          <Route path = "/validation_redux" component = {SampleSubmitValidationFormRedux} />
       </Router>
     );
   }
