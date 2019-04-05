@@ -8,6 +8,7 @@ import SampleDataTable from './components/template/SampleDataTable'
 import SampleValidation from './components/template/SampleValidation'
 import SampleFormRefux from './components/template/SampleFormRedux'
 import SampleSubmitValidationFormRedux from './components/template/SampleSubmitValidationFormRedux'
+import SampleSpreadAttributes from './components/template/SampleSpreadAttributes'
 
 class App extends Component {
 
@@ -26,6 +27,7 @@ class App extends Component {
           <Route path = "/validation" component = {SampleValidation} />
           <Route path = "/reduxform" component = {SampleFormRefux} />
           <Route path = "/validation_redux" component = {SampleSubmitValidationFormRedux} />
+          <Route path = "/spread_attributes" component = {SampleSpreadAttributes} />
       </Router>
     );
   }
