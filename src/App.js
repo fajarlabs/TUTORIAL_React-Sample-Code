@@ -9,6 +9,9 @@ import SampleValidation from './components/template/SampleValidation'
 import SampleFormRefux from './components/template/SampleFormRedux'
 import SampleSubmitValidationFormRedux from './components/template/SampleSubmitValidationFormRedux'
 import SampleSpreadAttributes from './components/template/SampleSpreadAttributes'
+import SampleFragment from './components/template/SampleFragment'
+import SampleAppContext from './components/template/ctx_app_context'
+import SamplePortal from './components/template/SamplePortal'
 
 class App extends Component {
 
@@ -28,6 +31,9 @@ class App extends Component {
           <Route path = "/reduxform" component = {SampleFormRefux} />
           <Route path = "/validation_redux" component = {SampleSubmitValidationFormRedux} />
           <Route path = "/spread_attributes" component = {SampleSpreadAttributes} />
+          <Route path = "/fragment" component = {SampleFragment} />
+          <Route path = "/context" component = {SampleAppContext} />
+          <Route path = "/portal" component = {SamplePortal} />
       </Router>
     );
   }
