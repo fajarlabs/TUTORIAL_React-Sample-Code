@@ -12,6 +12,8 @@ import SampleSpreadAttributes from './components/template/SampleSpreadAttributes
 import SampleFragment from './components/template/SampleFragment'
 import SampleAppContext from './components/template/ctx_app_context'
 import SamplePortal from './components/template/SamplePortal'
+import SampleDotNotation from './components/template/SampleDotNotation'
+import SampleRepeatChildren from './components/template/SampleRepeatChildren'
 
 class App extends Component {
 
@@ -34,6 +36,8 @@ class App extends Component {
           <Route path = "/fragment" component = {SampleFragment} />
           <Route path = "/context" component = {SampleAppContext} />
           <Route path = "/portal" component = {SamplePortal} />
+          <Route path = "/dotnotation" component = {SampleDotNotation} />
+          <Route path = "/repeatchildren" component = {SampleRepeatChildren} />
       </Router>
     );
   }
